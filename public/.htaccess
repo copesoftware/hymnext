@@ -1,0 +1,26 @@
+Options -Indexes
+
+# HTTPS redirect
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Next.js static export — serve index.html for clean URLs
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.+)/?$ $1/index.html [L]
+
+# Fallback to 404
+ErrorDocument 404 /404/index.html
+
+# Cache static assets
+<FilesMatch "\.(css|js|woff2?|ttf|eot|svg|png|jpg|jpeg|gif|webp|webm|ico)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# Security headers
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"

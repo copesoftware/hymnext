@@ -9,9 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
+    "@types/highcharts": "^5.0.44",
+    "highcharts": "^12.6.0",
+    "highcharts-react-official": "^3.2.3",
     "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "swiper": "^12.1.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
