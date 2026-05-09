@@ -210,7 +210,7 @@ export default function NuestraEmpresaPage() {
                 {[1, 2, 3, 4, 5, 6].map((n) => (
                   <div key={n} className="border border-[#172a64]/30 rounded p-3 flex items-center justify-center bg-white/50 aspect-square relative">
                     <Image
-                      src={`/images/presencia/${n}.png`}
+                      src={`${BASE}/images/presencia/${n}.png`}
                       alt={`Sector ${n}`}
                       fill
                       className="object-contain p-3"
