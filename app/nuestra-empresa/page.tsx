@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
+
 export const metadata: Metadata = {
   title: "Nuestra empresa",
   description:
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function NuestraEmpresaPage() {
   return (
     <>
-      <Breadcrumb title="Nuestra empresa" backgroundImage="/images/personal/P_01.jpeg" />
+      <Breadcrumb title="Nuestra empresa" backgroundImage={`${BASE}/images/personal/P_01.jpeg`} />
 
       {/* Quiénes somos */}
       <section id="quienes-somos" className="py-16">

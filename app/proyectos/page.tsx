@@ -2,6 +2,8 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 import PortfolioGrid from "@/components/sections/PortfolioGrid";
 import type { Metadata } from "next";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "Proyectos",
   description: "Portafolio de proyectos de HYM Construcciones.",
@@ -12,7 +14,7 @@ export default function ProyectosPage() {
     <>
       <Breadcrumb
         title="Portafolio"
-        backgroundImage="/images/web/inicio/estructura.jpg"
+        backgroundImage={`${BASE}/images/web/inicio/estructura.jpg`}
       />
 
       <section className="py-12">

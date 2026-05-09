@@ -2,6 +2,8 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 import GallerySection from "@/components/sections/GallerySection";
 import type { Metadata } from "next";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "Servicios",
   description:
@@ -13,7 +15,7 @@ export default function ServiciosPage() {
     <>
       <Breadcrumb
         title="Servicios"
-        backgroundImage="/images/web/inicio/obra_civil.jpg"
+        backgroundImage={`${BASE}/images/web/inicio/obra_civil.jpg`}
       />
       <GallerySection />
     </>
