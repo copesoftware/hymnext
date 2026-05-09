@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 
+const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 interface Project {
   cat: string;
   folder: string;
@@ -175,6 +177,8 @@ const PROJECTS: Project[] = [
 
 const CATS = ["TODO", "OBRA CIVIL", "MOVIMIENTO DE TIERRAS", "ARQUITECTURA", "ESTRUCTURAS", "INSTALACIONES", "ELECTROMECÁNICO", "TUBERÍAS", "RECUBRIMIENTOS INDUSTRIALES"];
 
+const PROJECTS_PREFIXED = PROJECTS.map(p => ({ ...p, images: p.images.map(src => `${B}${src}`) }));
+
 // Modal component
 function Modal({ project, onClose }: { project: Project; onClose: () => void }) {
   const [idx, setIdx] = useState(0);
@@ -205,7 +209,7 @@ export default function PortfolioGrid() {
   const [modal, setModal] = useState<Project | null>(null);
   const [modalIdx, setModalIdx] = useState(0);
 
-  const filtered = activeCat === "TODO" ? PROJECTS : PROJECTS.filter(p => p.cat === activeCat);
+  const filtered = activeCat === "TODO" ? PROJECTS_PREFIXED : PROJECTS_PREFIXED.filter(p => p.cat === activeCat);
 
   return (
     <>

@@ -3,15 +3,17 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const SERVICES_GRID = [
-  { label: "OBRA CIVIL", image: "/images/web/inicio/obra_civil.jpg" },
-  { label: "MOVIMIENTO DE TIERRAS", image: "/images/web/inicio/movimiento_de_tierras.jpg" },
-  { label: "ARQUITECTURA", image: "/images/web/inicio/arquitectura.jpg" },
-  { label: "ESTRUCTURA", image: "/images/web/inicio/estructura.jpg" },
-  { label: "INSTALACIONES", image: "/images/web/inicio/instalaciones.jpg" },
-  { label: "ELECTROMECÁNICO", image: "/images/web/inicio/estructura.jpg" },
-  { label: "TUBERÍAS", image: "/images/web/inicio/instalaciones.jpg" },
-  { label: "RECUBRIMIENTOS", image: "/images/web/inicio/recubrimientos_industriales.jpg" },
+  { label: "OBRA CIVIL", image: `${B}/images/web/inicio/obra_civil.jpg` },
+  { label: "MOVIMIENTO DE TIERRAS", image: `${B}/images/web/inicio/movimiento_de_tierras.jpg` },
+  { label: "ARQUITECTURA", image: `${B}/images/web/inicio/arquitectura.jpg` },
+  { label: "ESTRUCTURA", image: `${B}/images/web/inicio/estructura.jpg` },
+  { label: "INSTALACIONES", image: `${B}/images/web/inicio/instalaciones.jpg` },
+  { label: "ELECTROMECÁNICO", image: `${B}/images/web/inicio/estructura.jpg` },
+  { label: "TUBERÍAS", image: `${B}/images/web/inicio/instalaciones.jpg` },
+  { label: "RECUBRIMIENTOS", image: `${B}/images/web/inicio/recubrimientos_industriales.jpg` },
 ];
 
 export default function ServicesTabSection() {
