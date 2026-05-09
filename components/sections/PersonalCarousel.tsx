@@ -2,12 +2,14 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const IMAGES = [
-  "/images/personal/P_01.jpeg",
-  "/images/personal/P_02.jpg",
-  "/images/personal/P_03.jpeg",
-  "/images/personal/P_05.jpeg",
-  "/images/personal/P_06.jpeg",
+  `${B}/images/personal/P_01.jpeg`,
+  `${B}/images/personal/P_02.jpg`,
+  `${B}/images/personal/P_03.jpeg`,
+  `${B}/images/personal/P_05.jpeg`,
+  `${B}/images/personal/P_06.jpeg`,
 ];
 
 const INTERVAL_MS = 3500;

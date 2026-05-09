@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Footer() {
   return (
     <footer className="bg-[#172a64] text-white">
@@ -11,7 +13,7 @@ export default function Footer() {
           <div className="flex justify-center md:justify-start">
             <Link href="/">
               <Image
-                src="/images/logoTrazo_blanco.png"
+                src={`${BASE}/images/logoTrazo_blanco.png`}
                 alt="HYM Construcciones"
                 width={200}
                 height={120}

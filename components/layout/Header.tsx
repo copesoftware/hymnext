@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 import { useState, useEffect } from "react";
 
 const NAV_LINKS = [
@@ -53,7 +55,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <Image
-            src={transparent ? "/images/logoTrazo_blanco.png" : "/images/logoTrazo_gris.png"}
+            src={transparent ? `${BASE}/images/logoTrazo_blanco.png` : `${BASE}/images/logoTrazo_gris.png`}
             alt="HYM Construcciones"
             width={120}
             height={40}

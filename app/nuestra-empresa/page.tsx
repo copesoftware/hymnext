@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/layout/Breadcrumb";
 import PersonalCarousel from "@/components/sections/PersonalCarousel";
 import type { Metadata } from "next";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "Nuestra empresa",
   description:
@@ -40,7 +42,7 @@ export default function NuestraEmpresaPage() {
             {/* Image */}
             <div className="relative h-72 lg:h-[360px] overflow-hidden rounded shadow-lg">
               <Image
-                src="/images/personal/P_01.jpeg"
+                src={`${BASE}/images/personal/P_01.jpeg`}
                 alt="Personal HYM Construcciones"
                 fill
                 className="object-cover"
@@ -221,7 +223,7 @@ export default function NuestraEmpresaPage() {
             {/* Right: map image */}
             <div className="relative w-full h-72 lg:h-96">
               <Image
-                src="/images/mapa.png"
+                src={`${BASE}/images/mapa.png`}
                 alt="Presencia de HYM Construcciones en México"
                 fill
                 className="object-contain"

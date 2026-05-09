@@ -1,3 +1,5 @@
+const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const COMPANY = {
   name: "HYM Construcciones",
   direccion:
@@ -17,7 +19,7 @@ export const SERVICES = [
     key: "obra-civil",
     label: "OBRA CIVIL",
     title: "Obra civil",
-    image: "/images/web/inicio/obra_civil.jpg",
+    image: `${B}/images/web/inicio/obra_civil.jpg`,
     items: [
       "Construcción de losas de concreto.",
       "Demoliciones de vialidades y edificios.",
@@ -32,7 +34,7 @@ export const SERVICES = [
     key: "movimiento-de-tierras",
     label: "MOVIMIENTO DE TIERRAS",
     title: "Movimiento de tierras",
-    image: "/images/web/inicio/movimiento_de_tierras.jpg",
+    image: `${B}/images/web/inicio/movimiento_de_tierras.jpg`,
     items: [
       "Excavaciones con maquinaria pesada.",
       "Carga y acarreo.",
@@ -46,7 +48,7 @@ export const SERVICES = [
     key: "arquitectura",
     label: "ARQUITECTURA",
     title: "Arquitectura",
-    image: "/images/web/inicio/arquitectura.jpg",
+    image: `${B}/images/web/inicio/arquitectura.jpg`,
     items: [
       "Remodelación de oficinas.",
       "Construcción de cuartos de control.",
@@ -60,7 +62,7 @@ export const SERVICES = [
     key: "estructura",
     label: "ESTRUCTURA",
     title: "Estructura",
-    image: "/images/web/inicio/estructura.jpg",
+    image: `${B}/images/web/inicio/estructura.jpg`,
     items: [
       "Fabricación y montaje de estructura.",
       "Instalaciones multipanel.",
@@ -73,7 +75,7 @@ export const SERVICES = [
     key: "tuberias",
     label: "TUBERÍAS",
     title: "Tuberías",
-    image: "/images/web/inicio/instalaciones.jpg",
+    image: `${B}/images/web/inicio/instalaciones.jpg`,
     items: [
       "Tubería de acero al carbón.",
       "Tubería de acero inoxidable.",
@@ -86,7 +88,7 @@ export const SERVICES = [
     key: "recubrimientos",
     label: "RECUBRIMIENTOS INDUSTRIALES",
     title: "Recubrimientos industriales",
-    image: "/images/web/inicio/recubrimientos_industriales.jpg",
+    image: `${B}/images/web/inicio/recubrimientos_industriales.jpg`,
     items: [
       "Pinturas epóxicas.",
       "Pinturas industriales.",
@@ -111,41 +113,41 @@ export const GALLERY_CATEGORIES = [
 export const GALLERY_IMAGES = [
   // Obra Civil
   ...Array.from({ length: 5 }, (_, i) => ({
-    src: `/images/web/servicios/1/1.${i + 1}.jpg`,
+    src: `${B}/images/web/servicios/1/1.${i + 1}.jpg`,
     category: "01",
     title: "Obra civil",
   })),
   // Movimiento de tierras
   ...Array.from({ length: 7 }, (_, i) => ({
-    src: `/images/web/servicios/2/2.${i + 1}.jpg`,
+    src: `${B}/images/web/servicios/2/2.${i + 1}.jpg`,
     category: "02",
     title: "Movimiento de tierras",
   })),
   // Arquitectura
   ...Array.from({ length: 6 }, (_, i) => ({
-    src: `/images/web/servicios/3/3.${i + 1}.jpg`,
+    src: `${B}/images/web/servicios/3/3.${i + 1}.jpg`,
     category: "03",
     title: "Arquitectura",
   })),
   // Estructura
   ...Array.from({ length: 9 }, (_, i) => ({
-    src: `/images/web/servicios/4/4.${i + 1}.jpg`,
+    src: `${B}/images/web/servicios/4/4.${i + 1}.jpg`,
     category: "04",
     title: "Estructura",
   })),
   // Tuberías (mix of jpg and jpeg)
   ...[
-    { src: `/images/web/servicios/5/5.1.jpg`, category: "05", title: "Tuberías" },
-    { src: `/images/web/servicios/5/5.2.jpg`, category: "05", title: "Tuberías" },
-    { src: `/images/web/servicios/5/5.3.jpg`, category: "05", title: "Tuberías" },
-    { src: `/images/web/servicios/5/5.4.jpeg`, category: "05", title: "Tuberías" },
-    { src: `/images/web/servicios/5/5.5.jpeg`, category: "05", title: "Tuberías" },
-    { src: `/images/web/servicios/5/5.6.jpg`, category: "05", title: "Tuberías" },
-    { src: `/images/web/servicios/5/5.7.jpg`, category: "05", title: "Tuberías" },
+    { src: `${B}/images/web/servicios/5/5.1.jpg`, category: "05", title: "Tuberías" },
+    { src: `${B}/images/web/servicios/5/5.2.jpg`, category: "05", title: "Tuberías" },
+    { src: `${B}/images/web/servicios/5/5.3.jpg`, category: "05", title: "Tuberías" },
+    { src: `${B}/images/web/servicios/5/5.4.jpeg`, category: "05", title: "Tuberías" },
+    { src: `${B}/images/web/servicios/5/5.5.jpeg`, category: "05", title: "Tuberías" },
+    { src: `${B}/images/web/servicios/5/5.6.jpg`, category: "05", title: "Tuberías" },
+    { src: `${B}/images/web/servicios/5/5.7.jpg`, category: "05", title: "Tuberías" },
   ],
   // Recubrimientos
   ...Array.from({ length: 3 }, (_, i) => ({
-    src: `/images/web/servicios/6/6.${i + 1}.jpg`,
+    src: `${B}/images/web/servicios/6/6.${i + 1}.jpg`,
     category: "06",
     title: "Recubrimientos industriales",
   })),
@@ -153,5 +155,5 @@ export const GALLERY_IMAGES = [
 
 export const CLIENT_LOGOS = Array.from({ length: 25 }, (_, i) => {
   const n = String(i + 1).padStart(2, "0");
-  return `/images/clientes/${n}.png`;
+  return `${B}/images/clientes/${n}.png`;
 });
