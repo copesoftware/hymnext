@@ -235,11 +235,21 @@ export default function PortfolioGrid() {
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {filtered.map((project) => {
-          const thumb = `/images/proyectos/${project.folder}/`;
+          const thumb = project.images[0];
           return (
-            <div key={project.label} className="bg-[#3d5a9a] rounded overflow-hidden flex flex-col">
+            <div key={project.label} className="rounded overflow-hidden flex flex-col relative min-h-[160px]">
+              {/* Background image */}
+              <Image
+                src={thumb}
+                alt={project.nombre}
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              />
+              {/* Dark overlay */}
+              <div className="absolute inset-0 bg-[#172a64]/70" />
               {/* Body */}
-              <div className="px-4 py-4 flex-1 text-white text-xs space-y-0.5">
+              <div className="relative px-4 py-4 flex-1 text-white text-xs space-y-0.5">
                 {project.nombre && <p><span className="font-semibold">Proyecto:</span> {project.nombre}</p>}
                 <p><span className="font-semibold">Ubicación:</span> {project.ubicacion}</p>
                 <p><span className="font-semibold">Año:</span> {project.anio}</p>
@@ -247,7 +257,7 @@ export default function PortfolioGrid() {
               {/* CTA */}
               <button
                 onClick={() => { setModal(project); setModalIdx(0); }}
-                className="flex items-center gap-2 px-4 py-3 text-white text-xs font-semibold hover:text-[#f0c040] transition-colors"
+                className="relative flex items-center gap-2 px-4 py-3 text-white text-xs font-semibold hover:text-[#f0c040] transition-colors"
               >
                 <svg className="w-8 h-3" fill="none" stroke="currentColor" viewBox="0 0 32 12">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M0 6h28M22 1l6 5-6 5" />
