@@ -6,14 +6,14 @@ import Link from "next/link";
 const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const SERVICES_GRID = [
-  { label: "OBRA CIVIL", image: `${B}/images/web/inicio/obra_civil.jpg` },
+  { label: "OBRA CIVIL", image: `${B}/images/proyectos/1-obra-civil/8-Centro-recreativo/CR_02.JPG` },
   { label: "MOVIMIENTO DE TIERRAS", image: `${B}/images/web/inicio/movimiento_de_tierras.jpg` },
-  { label: "ARQUITECTURA", image: `${B}/images/web/inicio/arquitectura.jpg` },
-  { label: "ESTRUCTURA", image: `${B}/images/web/inicio/estructura.jpg` },
-  { label: "INSTALACIONES", image: `${B}/images/web/inicio/instalaciones.jpg` },
-  { label: "ELECTROMECÁNICO", image: `${B}/images/web/inicio/estructura.jpg` },
-  { label: "TUBERÍAS", image: `${B}/images/web/inicio/instalaciones.jpg` },
-  { label: "RECUBRIMIENTOS", image: `${B}/images/web/inicio/recubrimientos_industriales.jpg` },
+  { label: "ARQUITECTURA", image: `${B}/images/proyectos/3-arquitectura/2-Oficinas/Of_05.JPG` },
+  { label: "ESTRUCTURA", image: `${B}/images/proyectos/4-estructura/1-Taller-de-Mantenimiento/TM_02.jpeg` },
+  { label: "INSTALACIONES", image: `${B}/images/proyectos/5-instalaciones/1-Laboratorio/Inst_01.JPG` },
+  { label: "ELECTROMECÁNICO", image: `${B}/images/proyectos/6-electromecanico/2-Laboratorio/Elec_01.JPEG` },
+  { label: "TUBERÍAS", image: `${B}/images/proyectos/7-tuberias/2-Acero-inoxidable/Ac_01.jpeg` },
+  { label: "RECUBRIMIENTOS", image: `${B}/images/proyectos/8-recubrimientos/Ri_03.JPG` },
 ];
 
 export default function ServicesTabSection() {
@@ -28,19 +28,21 @@ export default function ServicesTabSection() {
             Nuestros servicios
           </h2>
           <div className="w-2/3 mx-auto border-b-2 border-[#172a64] mb-8" />
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <p className="text-gray-700 leading-relaxed max-w-2xl">
+          <div className="flex flex-col gap-6">
+            <p className="text-gray-700 leading-relaxed">
               Cada proyecto está realizado mediante el trabajo en equipo, creemos
               en la gran calidad moral de cada persona que forma parte de nuestra
               empresa e impulsamos su sentido de la responsabilidad, fomentando la
               motivación y superación creando un entorno laboral sano y productivo.
             </p>
-            <Link
-              href="/nuestra-empresa"
-              className="flex-shrink-0 bg-[#172a64] text-white px-6 py-4 text-xs font-bold uppercase tracking-widest text-center hover:bg-[#0e1c45] transition-colors"
-            >
-              CONOCE MÁS DE<br />NOSOTROS
-            </Link>
+            <div className="flex justify-end">
+              <Link
+                href="/nuestra-empresa"
+                className="bg-[#172a64] text-white px-6 py-4 text-xs font-bold uppercase tracking-widest text-center hover:bg-[#0e1c45] transition-colors"
+              >
+                CONOCE MÁS DE<br />NOSOTROS
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -49,7 +51,7 @@ export default function ServicesTabSection() {
           {SERVICES_GRID.map((service, i) => (
             <div
               key={i}
-              className="relative aspect-video overflow-hidden cursor-pointer"
+              className="relative aspect-square overflow-hidden cursor-pointer"
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
             >

@@ -11,7 +11,7 @@ export default function Breadcrumb({
 }: BreadcrumbProps) {
   return (
     <div
-      className={`relative flex items-center justify-center pt-16 lg:pt-20 py-16 bg-cover bg-center ${!backgroundImage ? "bg-[#8898b0]" : ""}`}
+      className={`relative flex items-center justify-center pt-36 pb-16 bg-cover bg-center ${!backgroundImage ? "bg-[#8898b0]" : ""}`}
       style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}}
     >
       <div className="absolute inset-0 bg-[#172a64]/70" />

@@ -27,9 +27,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Transparent only on homepage hero
-  const isHome = pathname === "/";
-  const transparent = isHome && !scrolled;
+  const transparent = !scrolled;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -48,18 +46,22 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         transparent
           ? "bg-transparent"
-          : "bg-white shadow-md"
+          : "bg-[#172a64] shadow-md"
       }`}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between h-16 lg:h-20">
+      <div className={`container mx-auto px-4 flex items-center justify-between transition-all duration-500 ${
+        transparent ? "h-36 lg:h-44" : "h-20 lg:h-28"
+      }`}>
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <Image
-            src={transparent ? `${BASE}/images/logoTrazo_blanco.png` : `${BASE}/images/logoTrazo_gris.png`}
+            src={`${BASE}/images/logoBlanco.png`}
             alt="HYM Construcciones"
-            width={120}
-            height={40}
-            className="h-10 w-auto object-contain transition-opacity duration-300"
+            width={360}
+            height={128}
+            className={`w-auto object-contain transition-all duration-500 ${
+              transparent ? "h-36" : "h-24"
+            }`}
             priority
           />
         </Link>
@@ -70,13 +72,9 @@ export default function Header() {
             const active =
               href === "/" ? pathname === "/" : pathname.startsWith(href);
             const linkClass = `text-sm font-semibold uppercase tracking-wide transition-colors duration-200 ${
-              transparent
-                ? active
-                  ? "text-white border-b-2 border-white pb-0.5"
-                  : "text-white/90 hover:text-white"
-                : active
-                ? "text-[#172a64] border-b-2 border-[#172a64] pb-0.5"
-                : "text-gray-700 hover:text-[#172a64]"
+              active
+                ? "text-white border-b-2 border-white pb-0.5"
+                : "text-white/80 hover:text-white"
             }`;
 
             if (dropdown) {
@@ -111,9 +109,7 @@ export default function Header() {
 
         {/* Mobile toggle */}
         <button
-          className={`lg:hidden p-2 transition-colors ${
-            transparent ? "text-white" : "text-gray-700 hover:text-[#172a64]"
-          }`}
+          className="lg:hidden p-2 text-white hover:text-white/80 transition-colors"
           onClick={() => setMobileOpen((o) => !o)}
           aria-label="Abrir menú"
         >
@@ -129,7 +125,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">
+        <div className="lg:hidden bg-[#172a64] border-t border-white/20 shadow-lg">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {NAV_LINKS.map(({ href, label, dropdown }) => {
               const active =
@@ -138,8 +134,8 @@ export default function Header() {
                 <div key={href}>
                   <Link
                     href={href}
-                    className={`block py-2 text-sm font-semibold uppercase tracking-wide border-b border-gray-100 ${
-                      active ? "text-[#172a64]" : "text-gray-700"
+                    className={`block py-2 text-sm font-semibold uppercase tracking-wide border-b border-white/20 ${
+                      active ? "text-white" : "text-white/80"
                     }`}
                   >
                     {label}
@@ -150,7 +146,7 @@ export default function Header() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="block py-1.5 text-sm text-gray-500 hover:text-[#172a64] transition-colors"
+                          className="block py-1.5 text-sm text-white/60 hover:text-white transition-colors"
                         >
                           {item.label}
                         </Link>

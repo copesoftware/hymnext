@@ -18,7 +18,7 @@ export default function NuestraEmpresaPage() {
       <Breadcrumb title="Nuestra empresa" backgroundImage={`${BASE}/images/personal/P_01.jpeg`} />
 
       {/* Quiénes somos */}
-      <section id="quienes-somos" className="py-16">
+      <section id="quienes-somos" className="py-16 scroll-mt-28">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Content */}
@@ -43,7 +43,7 @@ export default function NuestraEmpresaPage() {
             {/* Image */}
             <div className="relative h-72 lg:h-[360px] overflow-hidden rounded shadow-lg">
               <Image
-                src={`${BASE}/images/personal/P_01.jpeg`}
+                src={`${BASE}/images/personal/P_00.jpg`}
                 alt="Personal HYM Construcciones"
                 fill
                 className="object-cover"
@@ -83,7 +83,7 @@ export default function NuestraEmpresaPage() {
       </section>
 
       {/* Filosofía */}
-      <section id="filosofia" className="py-16 bg-gray-50 relative">
+      <section id="filosofia" className="py-16 bg-gray-50 relative scroll-mt-28">
         {/* Vertical label */}
         <div className="absolute right-0 top-0 flex items-start pointer-events-none pt-4">
           <span className="[writing-mode:vertical-rl] rotate-180 text-xs font-semibold tracking-widest uppercase text-[#172a64]/40 pr-2">
@@ -99,7 +99,7 @@ export default function NuestraEmpresaPage() {
           </div>
 
           {/* 5 value cards */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+          <div className="grid grid-cols-5 gap-4 mb-12">
             {[
               {
                 title: "Innovación",
@@ -154,7 +154,7 @@ export default function NuestraEmpresaPage() {
             ].map(({ title, text, dark, icon }) => (
               <div
                 key={title}
-                className={`rounded-lg p-5 text-center flex flex-col items-center transition-shadow hover:shadow-lg ${
+                className={`rounded-lg p-5 text-center flex flex-col items-center justify-center min-h-64 transition-shadow hover:shadow-lg ${
                   dark ? "bg-[#172a64] text-white" : "bg-gray-200 text-[#172a64]"
                 }`}
               >
@@ -188,7 +188,7 @@ export default function NuestraEmpresaPage() {
       </section>
 
       {/* Presencia */}
-      <section id="presencia" className="py-16 bg-gray-200 relative">
+      <section id="presencia" className="py-16 bg-gray-200 relative scroll-mt-28">
         {/* Vertical label */}
         <div className="absolute right-0 top-0 flex items-start pointer-events-none pt-4">
           <span className="[writing-mode:vertical-rl] rotate-180 text-xs font-semibold tracking-widest uppercase text-[#172a64]/40 pr-2">
@@ -227,7 +227,7 @@ export default function NuestraEmpresaPage() {
                 src={`${BASE}/images/mapa.png`}
                 alt="Presencia de HYM Construcciones en México"
                 fill
-                className="object-contain"
+                className="object-contain [filter:drop-shadow(-8px_12px_0px_rgba(0,0,0,0.5))]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

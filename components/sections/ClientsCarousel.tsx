@@ -36,7 +36,7 @@ export default function ClientsCarousel() {
 
         {/* Logos */}
         <div
-          className="bg-gray-100 rounded-sm py-10 px-6"
+          className="py-10 px-6"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
