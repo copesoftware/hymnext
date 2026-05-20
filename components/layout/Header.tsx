@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"; // useEffect kept for mobile menu close on route change
 
 const NAV_LINKS = [
   { href: "/", label: "Inicio" },
@@ -25,33 +25,14 @@ const NAV_LINKS = [
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  const transparent = !scrolled;
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    // Trigger immediately on mount
-    setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        transparent
-          ? "bg-transparent"
-          : "bg-[#172a64] shadow-md"
-      }`}
-    >
-      <div className={`container mx-auto px-4 flex items-center justify-between transition-all duration-500 ${
-        transparent ? "h-36 lg:h-44" : "h-20 lg:h-28"
-      }`}>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#172a64] shadow-md">
+      <div className="container mx-auto px-4 flex items-center justify-between h-20 lg:h-28">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <Image
@@ -59,9 +40,7 @@ export default function Header() {
             alt="HYM Construcciones"
             width={360}
             height={128}
-            className={`w-auto object-contain transition-all duration-500 ${
-              transparent ? "h-36" : "h-24"
-            }`}
+            className="w-auto object-contain h-24"
             priority
           />
         </Link>

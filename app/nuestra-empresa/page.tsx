@@ -20,13 +20,14 @@ export default function NuestraEmpresaPage() {
       {/* Quiénes somos */}
       <section id="quienes-somos" className="py-16 scroll-mt-28">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
             {/* Content */}
-            <div>
+            <div className="flex flex-col">
               <h2 className="text-3xl md:text-4xl font-bold text-[#172a64] uppercase mb-6">
                 Quienes somos
               </h2>
-              <p className="text-gray-700 leading-relaxed text-justify mb-5">
+              <div className="flex-1 flex flex-col justify-center gap-5">
+              <p className="text-gray-700 leading-relaxed text-justify">
                 HyM Construcciones, es una firma orgullosamente mexicana que desde sus
                 inicios ha mantenido un firme compromiso con la excelencia y el desarrollo
                 sostenible de infraestructura en nuestro país.
@@ -38,6 +39,7 @@ export default function NuestraEmpresaPage() {
                 riguroso de los plazos y un enfoque humano que distingue cada una de sus
                 obras.
               </p>
+              </div>
             </div>
 
             {/* Image */}
@@ -227,7 +229,7 @@ export default function NuestraEmpresaPage() {
                 src={`${BASE}/images/mapa.png`}
                 alt="Presencia de HYM Construcciones en México"
                 fill
-                className="object-contain [filter:drop-shadow(-8px_12px_0px_rgba(0,0,0,0.5))]"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

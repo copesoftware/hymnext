@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="flex justify-center md:justify-start">
             <Link href="/">
               <Image
-                src={`${BASE}/images/logoTrazo_blanco.png`}
+                src={`${BASE}/images/logoBlanco.png`}
                 alt="HYM Construcciones"
                 width={200}
                 height={120}

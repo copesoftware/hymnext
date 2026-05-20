@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="es" className={openSans.variable}>
       <body className="flex flex-col min-h-screen font-[family-name:var(--font-open-sans)]">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pt-20 lg:pt-28">{children}</main>
         <Footer />
       </body>
     </html>

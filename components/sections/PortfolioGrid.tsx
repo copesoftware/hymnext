@@ -57,7 +57,7 @@ const PROJECTS: Project[] = [
     "/images/proyectos/1-obra-civil/1-L60-2022/L60_06.jpg",
     "/images/proyectos/1-obra-civil/1-L60-2022/L60_07.jpg",
   ]},
-  { cat: "OBRA CIVIL", folder: "1-obra-civil/8-Centro-recreativo", label: "1.Obra Civil / 8. Centro recreativo", nombre: "Centro recreativo", ubicacion: "Tecate, Baja California.", anio: "", images: [
+  { cat: "OBRA CIVIL", folder: "1-obra-civil/8-Centro-recreativo", label: "1.Obra Civil / 8. Centro recreativo", nombre: "Centro recreativo", ubicacion: "Tecate, Baja California.", anio: "2019", images: [
     "/images/proyectos/1-obra-civil/8-Centro-recreativo/CR_01.JPG",
     "/images/proyectos/1-obra-civil/8-Centro-recreativo/CR_02.JPG",
     "/images/proyectos/1-obra-civil/8-Centro-recreativo/CR_03.JPG",
@@ -70,7 +70,7 @@ const PROJECTS: Project[] = [
     "/images/proyectos/2-movimiento-tierras/6-Canales/Cal_03.jpeg",
     "/images/proyectos/2-movimiento-tierras/6-Canales/Cal_04.jpeg",
   ]},
-  { cat: "MOVIMIENTO DE TIERRAS", folder: "2-movimiento-tierras/2-Tanques-2025", label: "2. Movimiento de Tierras / 2. Tanques 2025", nombre: "Tanques", ubicacion: "Navojoa, Sonora.", anio: "2025", images: [
+  { cat: "MOVIMIENTO DE TIERRAS", folder: "2-movimiento-tierras/2-Tanques-2025", label: "2. Movimiento de Tierras / 2. Calderas 2025", nombre: "Calderas", ubicacion: "Navojoa, Sonora.", anio: "2025", images: [
     "/images/proyectos/2-movimiento-tierras/2-Tanques-2025/WhatsApp Image 2025-02-06 at 10.09.04 AM (1).jpeg",
     "/images/proyectos/2-movimiento-tierras/2-Tanques-2025/WhatsApp Image 2025-02-06 at 10.24.31 AM (2).jpeg",
     "/images/proyectos/2-movimiento-tierras/2-Tanques-2025/WhatsApp Image 2025-02-06 at 10.24.32 AM (3).jpeg",
@@ -94,13 +94,13 @@ const PROJECTS: Project[] = [
     "/images/proyectos/2-movimiento-tierras/1-L60-2022/IMG_20220804_103538884.jpg",
   ]},
   // 3. Arquitectura
-  { cat: "ARQUITECTURA", folder: "3-arquitectura/1-Centro-recreativo", label: "3. Arquitectura / 1. Centro recreativo", nombre: "Centro recreativo", ubicacion: "Tecate, Baja California.", anio: "", images: [
+  { cat: "ARQUITECTURA", folder: "3-arquitectura/1-Centro-recreativo", label: "3. Arquitectura / 1. Centro recreativo", nombre: "Centro recreativo", ubicacion: "Tecate, Baja California.", anio: "2019", images: [
     "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_01.JPG",
     "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_02.JPG",
     "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_03.JPG",
     "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_04.JPG",
   ]},
-  { cat: "ARQUITECTURA", folder: "3-arquitectura/2-Oficinas", label: "3. Arquitectura / 2. Oficinas", nombre: "Oficinas", ubicacion: "Navojoa, Sonora.", anio: "", images: [
+  { cat: "ARQUITECTURA", folder: "3-arquitectura/2-Oficinas", label: "3. Arquitectura / 2. Oficinas", nombre: "Oficinas", ubicacion: "Navojoa, Sonora.", anio: "2022", images: [
     "/images/proyectos/3-arquitectura/2-Oficinas/Of_01.JPG",
     "/images/proyectos/3-arquitectura/2-Oficinas/Of_02.jpg",
     "/images/proyectos/3-arquitectura/2-Oficinas/Of_03.jpg",
@@ -167,7 +167,7 @@ const PROJECTS: Project[] = [
     "/images/proyectos/7-tuberias/3-HDPE/HDPE_02.jpeg",
   ]},
   // 8. Recubrimientos
-  { cat: "RECUBRIMIENTOS INDUSTRIALES", folder: "8-recubrimientos", label: "8. Recubrimientos Industriales", nombre: "Planta de envasado.", ubicacion: "Tecate, Baja California.", anio: "", images: [
+  { cat: "RECUBRIMIENTOS INDUSTRIALES", folder: "8-recubrimientos", label: "8. Recubrimientos Industriales", nombre: "Planta de envasado.", ubicacion: "Tecate, Baja California.", anio: "2020", images: [
     "/images/proyectos/8-recubrimientos/Ri_00.jpg",
     "/images/proyectos/8-recubrimientos/Ri_01.JPG",
     "/images/proyectos/8-recubrimientos/Ri_02.JPG",
@@ -237,7 +237,7 @@ export default function PortfolioGrid() {
         {filtered.map((project) => {
           const thumb = project.images[0];
           return (
-            <div key={project.label} className="rounded overflow-hidden flex flex-col relative min-h-[160px]">
+            <div key={project.label} className="rounded overflow-hidden flex flex-col relative h-[320px]">
               {/* Background image */}
               <Image
                 src={thumb}
@@ -272,12 +272,12 @@ export default function PortfolioGrid() {
       {/* Modal con galería real */}
       {modal && (
         <div className="fixed inset-0 bg-black/85 z-50 overflow-y-auto" onClick={() => setModal(null)}>
-          <div className="min-h-full flex items-start justify-center p-4 pt-12">
-          <div className="relative w-full max-w-4xl" onClick={e => e.stopPropagation()}>
+          <div className="min-h-full flex items-center justify-center p-4">
+          <div className="relative w-full max-w-6xl" onClick={e => e.stopPropagation()}>
             {/* Close */}
             <button onClick={() => setModal(null)} className="absolute -top-8 right-0 text-white text-4xl leading-none hover:text-gray-300">&times;</button>
             {/* Title */}
-            <p className="text-[#f0c040] text-base font-semibold text-center mb-3">{modal.nombre || modal.label}</p>
+            <p className="text-white text-base font-semibold text-center mb-3">{modal.nombre || modal.label}</p>
             {/* Image */}
             <div className="relative aspect-video bg-black rounded overflow-hidden">
               <Image

@@ -20,15 +20,15 @@ export default function ServicesTabSection() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 mt-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="mb-10">
+        <div className="mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-[#172a64] uppercase text-center tracking-widest mb-4">
             Nuestros servicios
           </h2>
           <div className="w-2/3 mx-auto border-b-2 border-[#172a64] mb-8" />
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-10">
             <p className="text-gray-700 leading-relaxed">
               Cada proyecto está realizado mediante el trabajo en equipo, creemos
               en la gran calidad moral de cada persona que forma parte de nuestra
