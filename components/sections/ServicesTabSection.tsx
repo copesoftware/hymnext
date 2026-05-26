@@ -13,7 +13,7 @@ const SERVICES_GRID = [
   { label: "INSTALACIONES", image: `${B}/images/proyectos/5-instalaciones/1-Laboratorio/Inst_01.JPG` },
   { label: "ELECTROMECÁNICO", image: `${B}/images/proyectos/6-electromecanico/2-Laboratorio/Elec_01.JPEG` },
   { label: "TUBERÍAS", image: `${B}/images/proyectos/7-tuberias/2-Acero-inoxidable/Ac_01.jpeg` },
-  { label: "RECUBRIMIENTOS", image: `${B}/images/proyectos/8-recubrimientos/Ri_03.JPG` },
+  { label: "RECUBRIMIENTOS", image: `${B}/images/proyectos/8-recubrimientos/3. Envasado 2020/Ri_03.JPG` },
 ];
 
 export default function ServicesTabSection() {

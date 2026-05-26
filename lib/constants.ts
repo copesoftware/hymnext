@@ -153,7 +153,7 @@ export const GALLERY_IMAGES = [
   })),
 ];
 
-export const CLIENT_LOGOS = Array.from({ length: 25 }, (_, i) => {
+export const CLIENT_LOGOS = Array.from({ length: 27 }, (_, i) => {
   const n = String(i + 1).padStart(2, "0");
   return `${B}/images/clientes/${n}.png`;
 });

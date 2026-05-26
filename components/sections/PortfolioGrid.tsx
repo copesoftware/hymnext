@@ -48,6 +48,15 @@ const PROJECTS: Project[] = [
     "/images/proyectos/1-obra-civil/5-Vialidades-2022/V_05.jpg",
     "/images/proyectos/1-obra-civil/5-Vialidades-2022/V_06.jpg",
   ]},
+  { cat: "OBRA CIVIL", folder: "1-obra-civil/10. Cimentación", label: "1. Obra Civil / 10. Cimentación", nombre: "Cimentación para prensa de extrusión.", ubicacion: "Tijuana, Baja California.", anio: "2022", images: [
+    "/images/proyectos/1-obra-civil/10. Cimentación/C_01.JPEG",
+    "/images/proyectos/1-obra-civil/10. Cimentación/C_02.JPEG",
+    "/images/proyectos/1-obra-civil/10. Cimentación/C_03.JPEG",
+    "/images/proyectos/1-obra-civil/10. Cimentación/C_04.jpg",
+    "/images/proyectos/1-obra-civil/10. Cimentación/C_05.JPEG",
+    "/images/proyectos/1-obra-civil/10. Cimentación/C_06.JPEG",
+    "/images/proyectos/1-obra-civil/10. Cimentación/C_07.JPEG",
+  ]},
   { cat: "OBRA CIVIL", folder: "1-obra-civil/1-L60-2022", label: "1.Obra Civil / 1. L60 2022", nombre: "Linea 60", ubicacion: "Navojoa, Sonora.", anio: "2022", images: [
     "/images/proyectos/1-obra-civil/1-L60-2022/L60_01.jpg",
     "/images/proyectos/1-obra-civil/1-L60-2022/L60_02.jpg",
@@ -56,6 +65,20 @@ const PROJECTS: Project[] = [
     "/images/proyectos/1-obra-civil/1-L60-2022/L60_05.jpg",
     "/images/proyectos/1-obra-civil/1-L60-2022/L60_06.jpg",
     "/images/proyectos/1-obra-civil/1-L60-2022/L60_07.jpg",
+  ]},
+  { cat: "OBRA CIVIL", folder: "1-obra-civil/9. Pavimentacion Tecate", label: "1. Obra Civil / 9. Pavimentación Tecate", nombre: "Pavimentación planta.", ubicacion: "Tecate, Baja California.", anio: "2021", images: [
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_01.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_02.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_03.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_04.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_05.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_06.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_07.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_08.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_09.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_10.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_11.JPEG",
+    "/images/proyectos/1-obra-civil/9. Pavimentacion Tecate/PT_12.JPEG",
   ]},
   { cat: "OBRA CIVIL", folder: "1-obra-civil/8-Centro-recreativo", label: "1.Obra Civil / 8. Centro recreativo", nombre: "Centro recreativo", ubicacion: "Tecate, Baja California.", anio: "2019", images: [
     "/images/proyectos/1-obra-civil/8-Centro-recreativo/CR_01.JPG",
@@ -93,12 +116,34 @@ const PROJECTS: Project[] = [
     "/images/proyectos/2-movimiento-tierras/1-L60-2022/IMG_20220723_130010357.jpg",
     "/images/proyectos/2-movimiento-tierras/1-L60-2022/IMG_20220804_103538884.jpg",
   ]},
+  { cat: "MOVIMIENTO DE TIERRAS", folder: "2-movimiento-tierras/7. Pavimentacion", label: "2. Movimiento de Tierras / 7. Pavimentación", nombre: "Pavimentación planta.", ubicacion: "Tecate, Baja California.", anio: "2021", images: [
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_01.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_02.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_03.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_04.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_05.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_06.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_07.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_08.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_09.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_10.JPEG",
+    "/images/proyectos/2-movimiento-tierras/7. Pavimentacion/P_11.JPEG",
+  ]},
   // 3. Arquitectura
-  { cat: "ARQUITECTURA", folder: "3-arquitectura/1-Centro-recreativo", label: "3. Arquitectura / 1. Centro recreativo", nombre: "Centro recreativo", ubicacion: "Tecate, Baja California.", anio: "2019", images: [
-    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_01.JPG",
-    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_02.JPG",
-    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_03.JPG",
-    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_04.JPG",
+  { cat: "ARQUITECTURA", folder: "3-arquitectura/3. Remodelación Comedor", label: "3. Arquitectura / 3. Remodelación Comedor", nombre: "Remodelación comedor.", ubicacion: "Tecate, Baja California.", anio: "2026", images: [
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_00.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_01.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_02.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_03.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_04.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_05.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_06.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_07.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_08.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_09.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_10.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_11.jpeg",
+    "/images/proyectos/3-arquitectura/3. Remodelación Comedor/C_12.jpeg",
   ]},
   { cat: "ARQUITECTURA", folder: "3-arquitectura/2-Oficinas", label: "3. Arquitectura / 2. Oficinas", nombre: "Oficinas", ubicacion: "Navojoa, Sonora.", anio: "2022", images: [
     "/images/proyectos/3-arquitectura/2-Oficinas/Of_01.JPG",
@@ -108,7 +153,37 @@ const PROJECTS: Project[] = [
     "/images/proyectos/3-arquitectura/2-Oficinas/Of_05.JPG",
     "/images/proyectos/3-arquitectura/2-Oficinas/Of_06.JPG",
   ]},
+  { cat: "ARQUITECTURA", folder: "3-arquitectura/1-Centro-recreativo", label: "3. Arquitectura / 1. Centro recreativo", nombre: "Centro recreativo", ubicacion: "Tecate, Baja California.", anio: "2019", images: [
+    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_01.JPG",
+    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_02.JPG",
+    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_03.JPG",
+    "/images/proyectos/3-arquitectura/1-Centro-recreativo/CR_04.JPG",
+  ]},
   // 4. Estructura
+  { cat: "ESTRUCTURAS", folder: "4-estructura/0. Domo", label: "4. Estructura / 0. Domo", nombre: "Domo de Mineral.", ubicacion: "Monterrey, Nuevo León.", anio: "2026", images: [
+    "/images/proyectos/4-estructura/0. Domo/D_01.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_02.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_03.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_04.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_05.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_06.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_07.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_08.jpeg",
+    "/images/proyectos/4-estructura/0. Domo/D_09.jpeg",
+  ]},
+  { cat: "ESTRUCTURAS", folder: "4-estructura/3-Tuberias", label: "4. Estructura / 3. Tuberías", nombre: "Rack Tuberías.", ubicacion: "Navojoa, Sonora.", anio: "2025", images: [
+    "/images/proyectos/4-estructura/3-Tuberias/Tub_01.jpeg",
+    "/images/proyectos/4-estructura/3-Tuberias/Tub_02.jpeg",
+  ]},
+  { cat: "ESTRUCTURAS", folder: "4-estructura/Alm_01", label: "4. Estructura / Alm_01", nombre: "Plataforma Maquina 3.", ubicacion: "Navojoa, Sonora.", anio: "2025", images: [
+    "/images/proyectos/4-estructura/Alm_01/Alm_01.jpeg",
+  ]},
+  { cat: "ESTRUCTURAS", folder: "4-estructura/Lam_01", label: "4. Estructura / Lam_01", nombre: "Laminación en Edificio de Pastas.", ubicacion: "Navojoa, Sonora.", anio: "2025", images: [
+    "/images/proyectos/4-estructura/Lam_01/Lam_01.jpeg",
+  ]},
+  { cat: "ESTRUCTURAS", folder: "4-estructura/Tec_01", label: "4. Estructura / Tec_01", nombre: "Calderas.", ubicacion: "Navojoa, Sonora.", anio: "2025", images: [
+    "/images/proyectos/4-estructura/Tec_01/Tec_01.jpeg",
+  ]},
   { cat: "ESTRUCTURAS", folder: "4-estructura/1-Taller-de-Mantenimiento", label: "4. Estructura / 1. Taller de Mantenimiento", nombre: "Taller de mantenimiento", ubicacion: "La Terronera, Jalisco.", anio: "2024", images: [
     "/images/proyectos/4-estructura/1-Taller-de-Mantenimiento/TM_01.jpeg",
     "/images/proyectos/4-estructura/1-Taller-de-Mantenimiento/TM_02.jpeg",
@@ -121,10 +196,6 @@ const PROJECTS: Project[] = [
     "/images/proyectos/4-estructura/2-Laboratorio/Lab_02.jpeg",
     "/images/proyectos/4-estructura/2-Laboratorio/Lab_03.JPG",
     "/images/proyectos/4-estructura/2-Laboratorio/Lab_04.JPG",
-  ]},
-  { cat: "ESTRUCTURAS", folder: "4-estructura/3-Tuberias", label: "4. Estructura / 3. Tuberías", nombre: "", ubicacion: "Navojoa, Sonora.", anio: "2025", images: [
-    "/images/proyectos/4-estructura/3-Tuberias/Tub_01.jpeg",
-    "/images/proyectos/4-estructura/3-Tuberias/Tub_02.jpeg",
   ]},
   // 5. Instalaciones
   { cat: "INSTALACIONES", folder: "5-instalaciones/1-Laboratorio", label: "5. Instalaciones / 1. Laboratorio", nombre: "Laboratorio", ubicacion: "La Terronera, Jalisco.", anio: "2024", images: [
@@ -167,11 +238,22 @@ const PROJECTS: Project[] = [
     "/images/proyectos/7-tuberias/3-HDPE/HDPE_02.jpeg",
   ]},
   // 8. Recubrimientos
-  { cat: "RECUBRIMIENTOS INDUSTRIALES", folder: "8-recubrimientos", label: "8. Recubrimientos Industriales", nombre: "Planta de envasado.", ubicacion: "Tecate, Baja California.", anio: "2020", images: [
-    "/images/proyectos/8-recubrimientos/Ri_00.jpg",
-    "/images/proyectos/8-recubrimientos/Ri_01.JPG",
-    "/images/proyectos/8-recubrimientos/Ri_02.JPG",
-    "/images/proyectos/8-recubrimientos/Ri_03.JPG",
+  { cat: "RECUBRIMIENTOS INDUSTRIALES", folder: "8-recubrimientos/1. Cuarto de Baterias 2024", label: "8. Recubrimientos / 1. Cuarto de Baterías 2024", nombre: "Cuarto de baterías.", ubicacion: "Tecate, Baja California.", anio: "2024", images: [
+    "/images/proyectos/8-recubrimientos/1. Cuarto de Baterias 2024/CB_01.jpeg",
+    "/images/proyectos/8-recubrimientos/1. Cuarto de Baterias 2024/CB_02.jpeg",
+    "/images/proyectos/8-recubrimientos/1. Cuarto de Baterias 2024/CB_03.jpeg",
+    "/images/proyectos/8-recubrimientos/1. Cuarto de Baterias 2024/CB_04.jpeg",
+  ]},
+  { cat: "RECUBRIMIENTOS INDUSTRIALES", folder: "8-recubrimientos/2. L60 2022", label: "8. Recubrimientos / 2. Línea 60 2022", nombre: "Línea 60.", ubicacion: "Navojoa, Sonora.", anio: "2022", images: [
+    "/images/proyectos/8-recubrimientos/2. L60 2022/L60_01.jpeg",
+    "/images/proyectos/8-recubrimientos/2. L60 2022/L60_02.jpeg",
+    "/images/proyectos/8-recubrimientos/2. L60 2022/L60_03.jpeg",
+    "/images/proyectos/8-recubrimientos/2. L60 2022/L60_04.jpeg",
+  ]},
+  { cat: "RECUBRIMIENTOS INDUSTRIALES", folder: "8-recubrimientos/3. Envasado 2020", label: "8. Recubrimientos / 3. Envasado 2020", nombre: "Planta de envasado.", ubicacion: "Tecate, Baja California.", anio: "2020", images: [
+    "/images/proyectos/8-recubrimientos/3. Envasado 2020/Ri_00.jpg",
+    "/images/proyectos/8-recubrimientos/3. Envasado 2020/Ri_02.JPG",
+    "/images/proyectos/8-recubrimientos/3. Envasado 2020/Ri_03.JPG",
   ]},
 ];
 

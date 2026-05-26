@@ -43,7 +43,7 @@ export default function NuestraEmpresaPage() {
             </div>
 
             {/* Image */}
-            <div className="relative h-72 lg:h-[360px] overflow-hidden rounded shadow-lg">
+            <div className="relative aspect-[4/3] overflow-hidden rounded shadow-lg">
               <Image
                 src={`${BASE}/images/personal/P_00.jpg`}
                 alt="Personal HYM Construcciones"
@@ -72,12 +72,7 @@ export default function NuestraEmpresaPage() {
                 organizacional.
               </p>
               <p className="text-gray-700 leading-relaxed text-justify">
-                El talento humano es considerado el recurso más valioso de la
-                empresa. Su equipo está conformado por ingenieros,
-                arquitectos, técnicos, operadores y personal administrativo
-                con amplio conocimiento del sector, lo que se traduce en
-                ejecución impecable de obras, soluciones creativas y un
-                servicio de alta calidad.
+                El talento humano es considerado el recurso más valioso de la empresa. Su equipo está conformado por ingenieros, arquitectos, técnicos, operadores y personal administrativo con amplio conocimiento del sector, lo que se traduce a soluciones creativas y un servicio de alta calidad.
               </p>
             </div>
           </div>
@@ -193,7 +188,7 @@ export default function NuestraEmpresaPage() {
       <section id="presencia" className="py-16 bg-gray-200 relative scroll-mt-28">
         {/* Vertical label */}
         <div className="absolute right-0 top-0 flex items-start pointer-events-none pt-4">
-          <span className="[writing-mode:vertical-rl] rotate-180 text-xs font-semibold tracking-widest uppercase text-[#172a64]/40 pr-2">
+          <span className="[writing-mode:vertical-rl] rotate-180 text-xs font-bold tracking-widest uppercase text-[#172a64]/80 pr-2">
             Presencia
           </span>
         </div>

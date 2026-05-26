@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#172a64] text-white">
       <div className="container mx-auto px-4 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
           {/* Logo */}
           <div className="flex justify-center md:justify-start">
             <Link href="/">
