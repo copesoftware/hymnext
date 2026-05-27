@@ -233,9 +233,36 @@ const PROJECTS: Project[] = [
     "/images/proyectos/7-tuberias/2-Acero-inoxidable/Ac_03.jpg",
     "/images/proyectos/7-tuberias/2-Acero-inoxidable/Ac_04.jpeg",
   ]},
-  { cat: "TUBERÍAS", folder: "7-tuberias/3-HDPE", label: "7. Tuberías / 3. HDPE / HDPE_01", nombre: "Vialidad", ubicacion: "Tecate, Baja California.", anio: "", images: [
-    "/images/proyectos/7-tuberias/3-HDPE/HDPE_01.jpeg",
-    "/images/proyectos/7-tuberias/3-HDPE/HDPE_02.jpeg",
+  { cat: "TUBERÍAS", folder: "7-tuberias/3-HDPE/1. Tecate/1. Vialidad 2024", label: "7. Tuberías / 3. HDPE / 1. Tecate / 1. Vialidad 2024", nombre: "Vialidad", ubicacion: "Tecate, Baja California.", anio: "2024", images: [
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/1. Vialidad 2024/HDPE_01.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/1. Vialidad 2024/HDPE_02.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/1. Vialidad 2024/HDPE_03.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/1. Vialidad 2024/HDPE_04.jpeg",
+  ]},
+  { cat: "TUBERÍAS", folder: "7-tuberias/3-HDPE/1. Tecate/2. Biogas 2024", label: "7. Tuberías / 3. HDPE / 1. Tecate / 2. Biogas 2024", nombre: "Tubería subterránea biogas", ubicacion: "Tecate, Baja California.", anio: "2024", images: [
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/2. Biogas 2024/HDPE_01.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/2. Biogas 2024/HDPE_02.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/2. Biogas 2024/HDPE_03.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/2. Biogas 2024/HDPE_04.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/1. Tecate/2. Biogas 2024/HDPE_05.jpeg",
+  ]},
+  { cat: "TUBERÍAS", folder: "7-tuberias/3-HDPE/2. Bachoco/1. Sinaloa", label: "7. Tuberías / 3. HDPE / 2. Bachoco / 1. Sinaloa", nombre: "Red hidráulica exterior", ubicacion: "Los Mochis, Sinaloa.", anio: "2023", images: [
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/1. Sinaloa/HDPE_01.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/1. Sinaloa/HDPE_02.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/1. Sinaloa/HDPE_03.jpeg",
+  ]},
+  { cat: "TUBERÍAS", folder: "7-tuberias/3-HDPE/2. Bachoco/2. Caborca", label: "7. Tuberías / 3. HDPE / 2. Bachoco / 2. Caborca", nombre: "Red hidráulica", ubicacion: "Caborca, Sonora.", anio: "2024", images: [
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_01.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_02.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_03.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_04.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_05.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_06.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_07.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_08.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_10.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_11.jpeg",
+    "/images/proyectos/7-tuberias/3-HDPE/2. Bachoco/2. Caborca/HDPE_12.jpeg",
   ]},
   // 8. Recubrimientos
   { cat: "RECUBRIMIENTOS INDUSTRIALES", folder: "8-recubrimientos/1. Cuarto de Baterias 2024", label: "8. Recubrimientos / 1. Cuarto de Baterías 2024", nombre: "Cuarto de baterías.", ubicacion: "Tecate, Baja California.", anio: "2024", images: [
